@@ -10,7 +10,7 @@ export const Hero = () => {
                     <h1 className="text-8xl text-primary font-semibold tracking-widest uppercase">Collaborate</h1>
                 </div>
                 <div className="h-20 mb-4 px-4">
-                    <h3 className="text-2xl text-primary">No setup, no hassle—just open, draw, and share. Perfect for brainstorming, wireframing, or planning your next big idea. <br /> Whether you're solo or with a team, we’ve got you covered.</h3>
+                    <h3 className="text-2xl text-primary">No setup, no hassle—just open, draw, and share. Perfect for brainstorming, wireframing, or planning your next big idea. <br /> Whether you&apos;re solo or with a team, we&apos;ve got you covered.</h3>
                 </div>
                 <div className="flex gap-4 px-4">
                     <div className="bg-primary rounded-full flex gap-2 items-center  justify-between px-2">
