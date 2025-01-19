@@ -1,13 +1,14 @@
 import { Github } from "lucide-react";
 import Link from "next/link";
 import { FcGoogle } from "react-icons/fc";
+import Image from "next/image";
 
 
 export default function Login (){
     return (
-        <div className="w-full">
-            <div className="flex items-center justify-around h-screen">
-                <div className="flex items-center justify-center h-screen ">
+        <div className="w-full h-screen py-32">
+            <div className="container mx-auto flex items-center justify-between h-full rounded-3xl bg-gradient-to-r from-background to-secondary">
+                <div className="flex items-center justify-center mx-6">
                     <div className=" h-[600px] w-full rounded-2xl">
                         <h1 className="text-3xl font-semibold text-primary">Get Started Now </h1>
                         <p className="text-primary text-lg">Sign up with 100xCanvas and save your work</p>
@@ -47,8 +48,14 @@ export default function Login (){
                     </div>
                 </div>
                 
-                <div>
-
+                <div className="flex items-center justify-center">
+                    <Image 
+                        src={'/Images/d.png'}
+                        width={850}
+                        height={850}
+                        alt="Canvas"
+                        className="bg-cover bottom-0"
+                    />
                 </div>
             </div>
         </div>
