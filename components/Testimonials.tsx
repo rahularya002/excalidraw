@@ -5,7 +5,7 @@ export const Testimonials = () => {
         <div className="min-h-screen w-full bg-primary py-20">
             <div className="container mx-auto px-4">
                 <h1 className="text-background text-5xl uppercase text-center mb-16 ">Testimonials</h1>
-                <div className="grid grid-cols-3 gap-4">
+                <div className="grid md:grid-cols-3 grid-cols gap-4">
                     <div className="grid gap-4">
                         <Tweets 
                             icon="https://i.pravatar.cc/150?u=a042581f4e29026024d"

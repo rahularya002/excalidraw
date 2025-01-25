@@ -11,7 +11,9 @@ export default {
       colors: {
         background: "#f1ede9",
         primary: "#4f4639",
-        secondary: "#c9ab7b"
+        secondary: "#c9ab7b",
+        canvas: "#121212",
+        toolbar: "#232329",
       },
       fontSize: {
         '6xl': '7rem',
