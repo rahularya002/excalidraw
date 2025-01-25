@@ -12,11 +12,11 @@ export default function Login (){
                     <div className=" h-[600px] w-full rounded-2xl">
                         <h1 className="text-3xl font-semibold text-primary">Get Started Now </h1>
                         <p className="text-primary text-lg">Sign up with 100xCanvas and save your work</p>
-                        <div className="flex gap-4 w-full mt-10">
+                        <div className="flex gap-4 w-full mt-10 justify-center">
                             <button className="flex gap-2 items-center rounded-full text-background bg-primary px-6 py-3"> <FcGoogle size={20}/> Login with Google </button>
                             <button className="flex gap-2 items-center rounded-full text-background bg-primary px-6 py-3"> <Github size={20} /> Login with Github </button>
                         </div>                      
-                        <div className="flex gap-6 mt-10 items-center text-primary text-lg">
+                        <div className="flex gap-6 mt-10 items-center text-primary text-lg justify-center">
                             <div className="h-[1px] w-[180px] bg-primary/40 my-4"></div>
                             or
                             <div className="h-[1px] w-[180px] bg-primary/40 my-4"></div>

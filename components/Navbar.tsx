@@ -7,10 +7,10 @@ import { usePathname } from "next/navigation"
 export const Navbar = () => {
 
     const pathName = usePathname()
-    if(pathName === '/'){
+    if(pathName === '/' || pathName === '/signup'){
         return (
-            <div className=" w-full sm:px-20 px-4 absolute z-10 py-4">
-                <div className="flex items-center justify-between h-16">
+            <div className=" w-full sm:px-20 px-4 fixed top-0 right-0 left-0 z-50 py-4 bg-background/80 backdrop-blur-sm overflow-hidden" >
+                <div className="flex items-center justify-between">
                     <Logo />
                     <div className="flex gap-4">
                         <Link href={'/signup'}>
