@@ -1,10 +1,10 @@
 'use client'
 
 import Link from "next/link"
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 import { Logo } from "./ui/Logo"
 import { usePathname } from "next/navigation"
-import { animate } from "motion"
+// import { animate } from "motion"
 
 export const Navbar = () => {
 

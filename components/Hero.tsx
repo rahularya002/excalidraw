@@ -1,6 +1,6 @@
 import { ArrowRight, Github } from "lucide-react"
 import Link from "next/link"
-import { motion } from "motion/react"
+// import { motion } from "motion/react"
 
 export const Hero = () => {
     return (
