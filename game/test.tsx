@@ -1,6 +1,6 @@
 'use client'
 
-import { useEffect, useRef, useState } from "react"
+import { useEffect, useRef } from "react"
 import { draw } from "./draw"
 
 export const Test = () => {
@@ -16,8 +16,8 @@ export const Test = () => {
     }, [canvasRef])
 
     return(
-        <div>
-            <canvas ref={canvasRef} width={window.innerWidth} height={window.innerHeight}></canvas>
+        <div className="">
+            <canvas ref={canvasRef} width={1920} height={919}></canvas>
             
         </div>
     )
