@@ -27,7 +27,9 @@ export const Hero = () => {
                     <div className="bg-[#645846] w-16 h-16 rounded-full flex items-center justify-center ">
                         <div className="bg-[#7e6c53] w-12 h-12 rounded-full flex items-center justify-center">
                             <div className="bg-[#8a7961] w-8 h-8 rounded-full flex items-center justify-center">
-                                <Github size={40} color="#f1ede9" strokeWidth={1}/>
+                                <Link href="https://github.com/rahularya002/excalidraw">
+                                    <Github size={40} color="#f1ede9" strokeWidth={1}/>
+                                </Link>
                             </div>
                         </div>
                     </div>
