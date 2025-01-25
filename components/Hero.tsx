@@ -1,12 +1,14 @@
 import { ArrowRight, Github } from "lucide-react"
 import Link from "next/link"
+import { motion } from "motion/react"
 
 export const Hero = () => {
     return (
         <div className=" w-screen">
             <div className="flex flex-col justify-center h-screen sm:mx-20 mx-4">
                 <div className="conatainer">
-                    <h1 className="sm:text-7xl text-5xl text-primary font-semibold tracking-widest uppercase sm:h-28">Sketch </h1>
+                    <h1 
+                        className="sm:text-7xl text-5xl text-primary font-semibold tracking-widest uppercase sm:h-28">Sketch </h1>
                     <h1 className="sm:text-7xl text-5xl text-secondary font-semibold tracking-widest uppercase sm:h-28">Create &</h1>
                     <h1 className="sm:text-7xl text-5xl text-primary font-semibold tracking-widest uppercase">Collaborate</h1>
                 </div>

@@ -4,7 +4,7 @@ import { Circle, Minus, Pencil, Square } from "lucide-react"
 import { useState } from "react"
 
 export const Tools = () => {
-    const [ isClicked, setIsClicked ] = useState(false)
+    // const [ isClicked, setIsClicked ] = useState(false)
 
     
 
