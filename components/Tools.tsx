@@ -1,21 +1,37 @@
-'use client'
+import { Circle, Minus, Pencil, Square } from "lucide-react";
+import { ToolButton } from "./ui/ToolButton";
 
-import { Circle, Minus, Pencil, Square } from "lucide-react"
-// import { useState } from "react"
-
-export const Tools = () => {
-    // const [ isClicked, setIsClicked ] = useState(false)
-
-    
-
+export const Tools = ({
+    shapeType,
+    setShapeType,
+}: {
+    shapeType: "rect" | "circle" | "line" | "pencil";
+    setShapeType: (shape: "rect" | "circle" | "line" | "pencil") => void;
+}) => {
     return (
         <div className="fixed top-2 inset-x-0 z-10 rounded-md bg-toolbar w-52 h-12 mx-auto">
             <div className="flex gap-2 items-center justify-center h-12">
-                <button className="p-2 hover:bg-gray-600/40 rounded-lg focus:bg-blue-600/40"><Square color="white" strokeWidth={1}/></button>
-                <button className="p-2 hover:bg-gray-600/40 rounded-lg focus:bg-blue-600/40"><Circle color="white" strokeWidth={1}/></button>
-                <button className="p-2 hover:bg-gray-600/40 rounded-lg focus:bg-blue-600/40"><Minus color="white" strokeWidth={1}/></button>
-                <button className="p-2 hover:bg-gray-600/40 rounded-lg focus:bg-blue-600/40"><Pencil color="white" strokeWidth={1}/></button>
+                <ToolButton
+                    onClick={() => setShapeType("rect")}
+                    icon={<Square color="white" strokeWidth={1} />}
+                    activated={shapeType === "rect"} // Activate if selected
+                />
+                <ToolButton
+                    onClick={() => setShapeType("circle")}
+                    icon={<Circle color="white" strokeWidth={1} />}
+                    activated={shapeType === "circle"}
+                />
+                <ToolButton
+                    onClick={() => setShapeType("line")}
+                    icon={<Minus color="white" strokeWidth={1} />}
+                    activated={shapeType === "line"}
+                />
+                <ToolButton
+                    onClick={() => setShapeType("pencil")}
+                    icon={<Pencil color="white" strokeWidth={1} />}
+                    activated={shapeType === "pencil"}
+                />
             </div>
         </div>
-    )
-}
+    );
+};

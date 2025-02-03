@@ -1,26 +1,22 @@
 'use client'
-
-import { useEffect, useRef } from "react"
-import { draw } from "./draw"
+import { useEffect, useRef, useState } from "react";
+import { Tools } from "@/components/Tools";
+import { draw } from "./draw";
 
 export const Test = () => {
-    const canvasRef = useRef<HTMLCanvasElement>(null)
+    const [shapeType, setShapeType] = useState<"rect" | "circle" | "line" | "pencil">("rect"); // Added "pencil"
+    const canvasRef = useRef<HTMLCanvasElement | null>(null);
 
-    useEffect (() => {
+    useEffect(() => {
         if (canvasRef.current) {
-            
-            draw(canvasRef.current)
-        
-          }
-        
-    }, [canvasRef])
+            draw(canvasRef.current, shapeType); // Pass selected shape to draw function
+        }
+    }, [shapeType]);
 
-    return(
-        <div className="">
-            <canvas ref={canvasRef} width={1920} height={919}></canvas>
-            
+    return (
+        <div>
+            <Tools shapeType={shapeType} setShapeType={setShapeType} />
+            <canvas ref={canvasRef} width={window.innerWidth} height={window.innerHeight} />
         </div>
-    )
-}
-
-
+    );
+};
