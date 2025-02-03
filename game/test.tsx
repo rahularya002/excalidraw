@@ -13,6 +13,9 @@ export const Test = () => {
         }
     }, [shapeType]);
 
+    if(!window){
+        return ("undefined")
+    }
     return (
         <div>
             <Tools shapeType={shapeType} setShapeType={setShapeType} />
